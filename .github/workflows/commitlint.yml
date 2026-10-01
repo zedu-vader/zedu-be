@@ -33,10 +33,7 @@ jobs:
 
       - name: Lint commits
         run: |
-          npx --yes \
-            -p @commitlint/cli@19 \
-            -p @commitlint/config-conventional@19 \
-            commitlint \
+          npx --yes -p @commitlint/cli@19 commitlint \
             --from "${{ github.event.pull_request.base.sha }}" \
             --to "${{ github.event.pull_request.head.sha }}" \
             --config commitlint.config.mjs

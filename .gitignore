@@ -58,3 +58,5 @@ telexbe
 telexbe_staging
 
 *.code-workspace
+config.bat
+node_modules
